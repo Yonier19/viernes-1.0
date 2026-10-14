@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-transparent m-0 p-0 overflow-hidden select-none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:* https://generativelanguage.googleapis.com https://www.google.com; media-src 'self' blob: data:;">
+    <title>Viernes - Overlay Flotante</title>
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html, body {
+        background: transparent !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      #overlay-root {
+        background: transparent !important;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="bg-transparent m-0 p-0 overflow-hidden select-none">
+    <div id="overlay-root"></div>
+    <script type="module" src="/src/overlay/main.tsx"></script>
+  </body>
+</html>

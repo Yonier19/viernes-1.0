@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:* https://generativelanguage.googleapis.com https://www.google.com; media-src 'self' blob: data:;">
+    <title>Viernes - Detector de Palabra de Activación</title>
+  </head>
+  <body style="background: black; color: white;">
+    <div id="status">Viernes Wake Word Background Service</div>
+    <script type="module" src="/src/wake-word/main.ts"></script>
+  </body>
+</html>

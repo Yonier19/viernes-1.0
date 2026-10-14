@@ -1,0 +1,8 @@
+{
+  "name": "fn viernes",
+  "description": "Asistente personal inteligente con interfaz holográfica Stark, reconocimiento de voz por wake word, gestión de memoria semántica y automatización.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

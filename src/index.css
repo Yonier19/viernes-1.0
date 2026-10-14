@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050811;
+    color: #e2e8f0;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Hologram and Arc Reactor glowing effects */
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.45), inset 0 0 15px rgba(0, 242, 254, 0.2);
+}
+
+.glow-violet {
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.45), inset 0 0 15px rgba(157, 78, 221, 0.2);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px rgba(255, 183, 3, 0.45), inset 0 0 15px rgba(255, 183, 3, 0.2);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.45), inset 0 0 15px rgba(0, 245, 212, 0.2);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.7), 0 0 25px rgba(0, 242, 254, 0.4);
+}
+
+.text-glow-violet {
+  text-shadow: 0 0 12px rgba(157, 78, 221, 0.7), 0 0 25px rgba(157, 78, 221, 0.4);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 12px rgba(255, 183, 3, 0.7), 0 0 25px rgba(255, 183, 3, 0.4);
+}
+
+/* Hexagon and Cyber Grid Background */
+.bg-cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 242, 254, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 242, 254, 0.05) 1px, transparent 1px);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 35%, rgba(11, 25, 54, 0.7) 0%, rgba(5, 8, 17, 0.95) 75%, #03050a 100%);
+}
+
+/* Animations */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinReverseSlow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spinReverseSlow 14s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(7, 13, 27, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 254, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 254, 0.6);
+}
